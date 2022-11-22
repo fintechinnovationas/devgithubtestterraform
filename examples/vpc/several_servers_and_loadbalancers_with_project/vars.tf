@@ -40,8 +40,8 @@ variable "lb_active_components" {
       listener_protocol          = "HTTP"
       listener_protocol_port     = 8090
       listener_x_forwarded_for   = true
-      listener_x_forwarded_port  = false
-      listener_x_forwarded_proto = false
+      listener_x_forwarded_port  = true
+      listener_x_forwarded_proto = true
       monitor_type               = "HTTP"
       monitor_url_path           = "/"
       monitor_delay              = 20

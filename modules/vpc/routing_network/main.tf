@@ -27,7 +27,7 @@ resource "openstack_networking_subnet_v2" "subnet_one" {
   network_id      = openstack_networking_network_v2.network_one.id
   name            = "10.10.0.0/24"
   cidr            = "10.10.0.0/24"
-  enable_dhcp     = false
+  enable_dhcp     = true
   dns_nameservers = ["188.93.16.19", "188.93.17.19"]
 }
 
@@ -35,7 +35,7 @@ resource "openstack_networking_subnet_v2" "subnet_two" {
   network_id      = openstack_networking_network_v2.network_one.id
   name            = "10.20.0.0/24"
   cidr            = "10.20.0.0/24"
-  enable_dhcp     = false
+  enable_dhcp     = true
   dns_nameservers = ["188.93.16.19", "188.93.17.19"]
 }
 
@@ -43,7 +43,7 @@ resource "openstack_networking_subnet_v2" "subnet_three" {
   network_id      = openstack_networking_network_v2.network_two.id
   name            = "10.30.0.0/24"
   cidr            = "10.30.0.0/24"
-  enable_dhcp     = false
+  enable_dhcp     = true
   dns_nameservers = ["188.93.16.19", "188.93.17.19"]
 }
 
