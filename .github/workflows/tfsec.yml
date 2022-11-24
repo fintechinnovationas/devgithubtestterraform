@@ -24,6 +24,8 @@ jobs:
 
       - name: Run tfsec
         uses: aquasecurity/tfsec-action@v1.0.2
+        with:
+          soft_fail: true
         
       - name: Run tfsec sarif test
         uses: aquasecurity/tfsec-sarif-action@v0.1.4
