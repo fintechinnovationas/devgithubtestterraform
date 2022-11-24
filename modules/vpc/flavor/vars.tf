@@ -15,5 +15,5 @@ variable "flavor_local_disk_gb" {
 }
 
 variable "flavor_is_public" {
-  default = false
+  default = true
 }
